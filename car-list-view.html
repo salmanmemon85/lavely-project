@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>CAR LIST VIEW</title>
+</head>
+<body>
+    <div id="top-bar">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-lg-2 col-12">
+                    <div class="d-flex justify-content-between">
+                        <a href="#" class="download-link"><i class="fad fa-arrow-alt-to-bottom"></i> Download The App</a> 
+                        <div class="menu-icon"><i class="fas fa-align-justify"></i></div>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-3 col-12">
+                    <div class="row g-0">
+                        <div class="col ">
+                            <select name="" class="form-control search-form-lang">
+                                <option value="Karachi">Eng Lang</option>
+                                <option value="Karachi">English</option>
+                                <option value="Karachi">Bangali</option>
+                                <option value="Karachi">BAlochi</option>
+                                <option value="Karachi">Siraiki</option>
+                                <option value="Karachi">Japani</option>
+                                <option value="Karachi">Memon</option>
+                            </select>
+                        </div>
+                        <div class="col-7 link-tag">
+                            <a href="./login.html" class="account-link"><i class="fas fa-user-circle"></i> Login </a>
+                            <span>&nbsp;/</span>
+                            <a href="./register.html" class="account-link">Register</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <header id="header">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-lg-2 col-6 col-area">
+                    <div class="cell-area">
+                        <h3 class="phone-area">
+                            24/7 Support for Contact
+                        </h3>
+                        <a href="tel:14084451331" class="phone-area-1 text-center">(1) 408 445 1331</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6 col-area">
+                    <div class="text-center">
+                      <a href="./index.html"><img class="img-fluid" src="./images/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <a href="./post-ads.html">
+                        <button type="button" class="header-btn text-center">Submit your Ad</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="banner-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="d-flex justify-content-between">
+                        <a href="./index.html" class="banner-top-list">Home</a>
+                        <a href="#" class="banner-top-list">/</a>
+                        <a href="./home-page-2.html" class="banner-top-list">car</a>
+                        <a href="#" class="banner-top-list">/</a>
+                        <a href="./listing-page.html" class="banner-top-list">listview</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <select name="" id="all-city">
+                        <option value="Karachi">Karachi</option>
+                        <option value="Karachi">Karachi</option>
+                        <option value="Karachi">Karachi</option>
+                        <option value="Karachi">Karachi</option>
+                        <option value="Karachi">Karachi</option>
+                        <option value="Karachi">Karachi</option>
+                        <option value="Karachi">Karachi</option>
+                    </select>
+                </div>
+                <div class="col-lg-3">
+                    <select name="" id="all-city">
+                        <option value="Karachi">Karachi</option>
+                        <option value="Karachi">Karachi</option>
+                        <option value="Karachi">Karachi</option>
+                        <option value="Karachi">Karachi</option>
+                        <option value="Karachi">Karachi</option>
+                        <option value="Karachi">Karachi</option>
+                        <option value="Karachi">Karachi</option>
+                    </select>
+                </div>
+                <div class="col-lg-4">
+                    <div class="input-area">
+                        <input type="text" placeholder="Search in all city">
+                    </div>
+                </div>
+
+                <div class="col-lg-2">
+                    <button type="button" class="seach-btn">
+                        <i class="fas fa-search"></i>
+                        <a href="#">Search</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-lg-3">
+                <select name="" id="home-page-select-area">
+                    <option value="Karachi">Brand Name</option>
+                    <option value="Karachi">karachi</option>
+                    <option value="Karachi">karachi</option>
+                    <option value="Karachi">karachi</option>
+                    <option value="Karachi">karachi</option>
+                    <option value="Karachi">karachi</option>
+                    <option value="Karachi">karachi</option>
+                </select>
+            </div>
+            <div class="col-lg-3">
+                <select name="" id="home-page-select-area">
+                    <option value="Karachi">Price Range</option>
+                    <option value="Karachi">karachi</option>
+                    <option value="Karachi">karachi</option>
+                    <option value="Karachi">karachi</option>
+                    <option value="Karachi">karachi</option>
+                    <option value="Karachi">karachi</option>
+                    <option value="Karachi">karachi</option>
+                </select>
+            </div>
+            <div class="col-lg-3">
+                <select name="" id="home-page-select-area">
+                    <option value="Karachi">Fuel type</option>
+                    <option value="Karachi">karachi</option>
+                    <option value="Karachi">karachi</option>
+                    <option value="Karachi">karachi</option>
+                    <option value="Karachi">karachi</option>
+                    <option value="Karachi">karachi</option>
+                    <option value="Karachi">karachi</option>
+                </select>
+            </div>
+            <div class="col-lg-3">
+                <select name="" id="home-page-select-area">
+                    <option value="Karachi">More Details</option>
+                    <option value="Karachi">karachi</option>
+                    <option value="Karachi">karachi</option>
+                    <option value="Karachi">karachi</option>
+                    <option value="Karachi">karachi</option>
+                    <option value="Karachi">karachi</option>
+                    <option value="Karachi">karachi</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">&nbsp;</div>
+            <div class="col-lg-2">
+            <div class="d-flex mt-4">
+                <a href="#" class="view-tag">View By:</a>
+                <div class="icon-hover"></div>
+                <div class="icon-hover"></div>
+            </div> 
+
+            </div>
+            <div class="col-lg-4">
+                <div class="d-flex mt-4">
+                    <a href="#" class="view-tag">Sort By:</a>
+                    <select name="" id="more-select">
+                        <option value="More Revelent">More Revelent</option>
+                        <option value="More Revelent">More Revelent</option>
+                        <option value="More Revelent">More Revelent</option>
+                        <option value="More Revelent">More Revelent</option>
+                        <option value="More Revelent">More Revelent</option>
+                        <option value="More Revelent">More Revelent</option>
+                        <option value="More Revelent">More Revelent</option>
+                    </select>
+                </div> 
+    
+                </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-lg-9">
+                <div  class="hover-box d-flex">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <div class="black-box-1">
+                                <div class="price-area"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="hover-box-hd">Lexus ls 500h Model Car</a>
+                                <a href="#"class="hover-hd-2">$82.76</a>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <h2 class="hover-hd-3">Cars - Lexus   </h2>
+                                <h2 class="hover-hd-4">Sale</h2>
+                            </div>
+                            <div class="d-flex justify-content-between hover-area">
+                                <h2 class="hover-hd-5">Posts</h2>
+                                <div>
+                                    <img class="img-fluid" src="./images/logo-box.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                    
+                </div>
+                <div class="hover-box d-flex mt-4">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <div class="black-box-1">
+                                <div class="price-area"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="hover-box-hd">Lexus ls 500h Model Car</a>
+                                <a href="#"class="hover-hd-2">$82.76</a>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <h2 class="hover-hd-3">Cars - Lexus   </h2>
+                                <h2 class="hover-hd-4">Sale</h2>
+                            </div>
+                            <div class="d-flex justify-content-between hover-area">
+                                <h2 class="hover-hd-5">Posts</h2>
+                                <div>
+                                    <img class="img-fluid" src="./images/logo-box.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                    
+                </div>
+                <div class="hover-box d-flex mt-4">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <div class="black-box-1">
+                                <div class="price-area"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="hover-box-hd">Lexus ls 500h Model Car</a>
+                                <a href="#"class="hover-hd-2">$82.76</a>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <h2 class="hover-hd-3">Cars - Lexus   </h2>
+                                <h2 class="hover-hd-4">Sale</h2>
+                            </div>
+                            <div class="d-flex justify-content-between hover-area">
+                                <h2 class="hover-hd-5">Posts</h2>
+                                <div>
+                                    <img class="img-fluid" src="./images/logo-box.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                    
+                </div>
+                <div class="hover-box d-flex mt-4">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <div class="black-box-1">
+                                <div class="price-area"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="hover-box-hd">Lexus ls 500h Model Car</a>
+                                <a href="#"class="hover-hd-2">$82.76</a>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <h2 class="hover-hd-3">Cars - Lexus   </h2>
+                                <h2 class="hover-hd-4">Sale</h2>
+                            </div>
+                            <div class="d-flex justify-content-between hover-area">
+                                <h2 class="hover-hd-5">Posts</h2>
+                                <div>
+                                    <img class="img-fluid" src="./images/logo-box.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                    
+                </div>
+                <div class="hover-box d-flex mt-4">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <div class="black-box-1">
+                                <div class="price-area"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="hover-box-hd">Lexus ls 500h Model Car</a>
+                                <a href="#"class="hover-hd-2">$82.76</a>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <h2 class="hover-hd-3">Cars - Lexus   </h2>
+                                <h2 class="hover-hd-4">Sale</h2>
+                            </div>
+                            <div class="d-flex justify-content-between hover-area">
+                                <h2 class="hover-hd-5">Posts</h2>
+                                <div>
+                                    <img class="img-fluid" src="./images/logo-box.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="listview-box">
+                    <div class="d-flex">
+                        <div class="red-box text-center">
+                            <img class="img-fluid" src="./images/logo-sec.png" alt="">
+                            <h2 class="red-box-hd">Innovation <br>
+                                That Excites</h2>
+                        </div>
+                        <div>
+                            <h2 class="listview-box-hd">Terrano</h2>
+                            <h2 class="listview-box-hd-1">$ 48.07</h2>
+                        </div>
+                    </div>
+                    <h2 class="listview-box-hd-2 text-center">Command the Road & All <br>
+                        tHE aTTENTION</h2>
+                        <div>
+                            <img class="img-fluid" src="./images/car-img-3.png" alt="">
+                        </div>
+                        <div class="text-center">
+                            <h2 class="text-center listview-box-hd-3">For a test Drive, Give a missed call</h2>
+                            <a href="#" class="phone-no">To (1) 404-882-2622</a>
+                            <div class="listview-sep"></div>
+                            <a href="#" class="link-tag">www.nissen.ac.in</a>
+                            <div class="d-flex justify-content-between">
+                                <div class="listview-sep-1"></div>
+                                <h2 class="sep-hd">Powered By</h2>
+                                <div class="listview-sep-1"></div>
+                            </div>
+                            <h2 class="listview-hd">Finance</h2>
+                            <h2 class="listview-hd-1">*Terms & Conditions Apply.</h2>
+                        </div>
+                </div>
+                <div class="listview-box-1">
+                    <div class="d-flex justify-content-between">
+                        <a href="#" class="listview-box-1-link-tag">www.jaguar.co.uk/fleet</a>
+                        <div>
+                            <img src="./images/puma-logo.png" alt="">
+                        </div>
+                    </div>
+                    <h2 class="listview-hd-2">The jaguar Business Range <br>
+                        From 129 G/Km</h2>
+                        <div class="text-center mt-3">
+                            <img src="./images/liist-view-box-img.png" alt="">
+                            <h2 class="listview-hd-3">*Terms & Conditions Apply.</h2>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer" class="mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="footer-hd">Why Choose Rental in New York</h2>
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="footer-hd">What to Rent</h2>
+                </div>
+            </div>
+            <div class="row mt-5 border-row-1">
+                <div class="col-lg-4">
+                    <div class="footer-box">
+                        <div class="footer-logo">
+                            <img src="./images/logo.png" alt="">
+                        </div>
+                        <p class="footer-para">He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment.</p>
+                        <div class="d-flex">
+                            <a href="https://play.google.com/store/apps/details?id=com.facebook.katana&hl=en&gl=US"><div class="social-icon-area text-center">
+                              <i class="fab fa-facebook-f"></i>
+                            </div></a>  
+                            <a href="https://twitter.com/?lang=en"><div class="social-icon-area text-center">
+                              <i class="fab fa-twitter"></i>
+                          </div></a>
+                          <a href="https://www.pinterest.com/"><div class="social-icon-area text-center">
+                              <i class="fab fa-pinterest-p"></i>
+                          </div></a>  
+                          <a href="https://www.linkedin.com/feed/"><div class="social-icon-area text-center">
+                              <i class="fab fa-linkedin-in"></i>
+                          </div></a>  
+                          <a href="https://www.google.com/"><div class="social-icon-area text-center">
+                              <i class="fab fa-google-plus-g"></i>
+                          </div></a>  
+                          </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="d-flex justify-content-between">
+                        <div class="">
+                        <a href="#" class="list-hd">Rental</a>
+                        <ul class="footer-list list-unstyled">
+                            <li><a href="./car-rent.html">About Us</a></li>
+                            <li><a href="./contact-us.html">Contact Us</a></li>
+                            <li><a href="./car-list-view.html">Culture</a></li>
+                            <li><a href="./blog-single.html">Careers</a></li>
+                            <li><a href="./blog-gridview.html">Investors</a></li>
+                        </ul>
+                    </div>
+                        <ul class="footer-list list-unstyled mt-5">
+                            <li><a href="./car-list.html">Blog</a></li>
+                            <li><a href="./home-page-2.html">FaQs</a></li>
+                            <li><a href="./index.html">Rental Terms & Conditions
+                            </a></li>
+                            <li><a href="./listing-page.html">Documents that we ask</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <a href="#" class="list-hd">Policies</a>
+                    <ul class="footer-list list-unstyled">
+                        <li><a href="./owner-pf.html">Shipping Policy</a></li>
+                        <li><a href="#">Privacy Policy
+                        </a></li>
+                        <li><a href="#">Cancellations & Modifications
+                        </a></li>
+                        <li><a href="#">Return & Refund
+                        </a></li>
+                        <li><a href="#">Referral Trems & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-12">
+                    <h2 class="footer-bottom-hd text-center">Copyrighting© 2017 <span class="footer-span">Levley</span> , All rights reserved.</h2>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
