@@ -8,6 +8,9 @@
   width: 100%;
   height: auto;
 }
+.main-hover {
+  margin-bottom: 30px;
+}
 
 .overlay {
   position: absolute;
@@ -479,8 +482,8 @@ a {
   font-weight: 500;
   color: #333333;
 }
-.footer-hd::after {
-  content: "We Specialise in Appliance on Rent It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day.";
+.footer-para-2 {
+  content: "";
   font-size: 15px;
   font-weight: 400;
   color: #666666;
@@ -1972,7 +1975,7 @@ a {
   font-family: "Lora", serif;
   text-transform: uppercase;
 }
-.address {
+.address-2 {
   margin-right: 100px;
 }
 .address a {
@@ -2647,6 +2650,7 @@ a {
 }
 .plus-area a {
   font-size: 15px;
+  margin-left: 48px;
   font-weight: 400;
   color: #010101;
   text-decoration: none;
@@ -2925,9 +2929,6 @@ a {
   .select-sec {
     padding: 0;
   }
-  .text-box-hover {
-    margin-top: 20px;
-  }
   #home-page-select-area {
     margin-top: 20px;
   }
@@ -3006,9 +3007,100 @@ a {
     position: absolute;
     display: block;
     margin-top: -350px;
-    right: -250px;
+    right: -220px;
   }
   .second-menu {
     display: block;
+  }
+  .cta-mobile-hd {
+    font-size: 21px;
+  }
+  .main-btn-area .btn-group-1 button {
+    margin: 18px 10px 0 0;
+  }
+  .black-box-1 {
+    width: 100%;
+  }
+  .hover-box-hd {
+    margin-left: 0;
+  }
+  .hover-hd-3 {
+    margin-left: 0;
+  }
+  .hover-hd-5 {
+    margin-left: 0;
+  }
+  .listview-box {
+    display: none;
+  }
+  .car-box {
+    width: 90px;
+  }
+  .main-profile {
+    padding-left: 125px;
+  }
+  .quanlity-area {
+    margin-left: 113px;
+  }
+  .place-btn {
+    margin-left: 90px;
+  }
+  .address {
+    /* margin-left: 0px; */
+  }
+  .address-2 {
+    margin-right: 24px;
+  }
+  .offset-1 {
+    margin-left: 0;
+  }
+  .offset-2 {
+    margin-left: 0;
+  }
+  .input-box-area {
+    padding: 20px 10px;
+  }
+  .input-box-area input {
+    width: 230px;
+  }
+  .form-btn-1 {
+    padding: 0 20px;
+    margin-left: 15px;
+  }
+  .group-btn {
+    margin-left: 50px;
+  }
+  .slick-slider-area img {
+    display: contents;
+  }
+  .slick-slider-area h2 {
+    font-size: 13px;
+  }
+  .buy-btn {
+    margin-left: 95px;
+  }
+  .star-img-area {
+    margin-left: 130px;
+  }
+  .text-box-hover {
+    margin-top: 20px;
+  }
+  .offset-3 {
+    margin-left: 0;
+  }
+  .tag .register-tag {
+    margin-left: 60px;
+  }
+  .pf-content-box {
+    transform: translateY(-34%);
+  }
+  .basic-sep {
+    width: 96%;
+  }
+  .register-user-area input {
+    width: 96%;
+  }
+  #login-form {
+    padding: 45px 20px;
   }
 }
